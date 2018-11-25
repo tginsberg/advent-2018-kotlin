@@ -4,11 +4,12 @@
 
 package com.ginsberg.advent2018
 
+import com.ginsberg.advent2018.Resources.resourceAsList
+import com.ginsberg.advent2018.Resources.resourceAsString
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
 internal class ResourcesTest {
-
 
     @Test
     fun `resourceAsString concatenates lines without delimiter`() {
