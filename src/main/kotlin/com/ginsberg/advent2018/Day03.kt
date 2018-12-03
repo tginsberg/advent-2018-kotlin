@@ -49,11 +49,10 @@ data class Claim(val id: Int, val left: Int, val top: Int, val width: Int, val h
     // This code parses a String into a Claim, using a Regular Expression
     companion object {
         private val pattern = """^#(\d+) @ (\d+),(\d+): (\d+)x(\d+)$""".toRegex()
-        fun parse(input: String): Claim {
-            return pattern.find(input)?.let {
+        fun parse(input: String): Claim =
+            pattern.find(input)?.let {
                 val (id, left, top, w, h) = it.destructured
                 Claim(id.toInt(), left.toInt(), top.toInt(), w.toInt(), h.toInt())
             } ?: throw IllegalArgumentException("Cannot parse $input")
-        }
     }
 }
