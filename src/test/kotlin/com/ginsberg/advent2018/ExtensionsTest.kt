@@ -39,4 +39,29 @@ internal class ExtensionsTest {
         }
     }
 
+    @DisplayName("Most Frequent Element")
+    @Nested
+    inner class MostFrequentElement {
+
+        @Test
+        @DisplayName("Empty means null")
+        fun emptyList() {
+            // Given
+            val input = emptyList<String>()
+
+            // Then
+            assertThat(input.mostFrequent()).isNull()
+        }
+
+        @Test
+        @DisplayName("Finds most frequent")
+        fun findsMostFrequent() {
+            // Given
+            val input = listOf(1,1,2,2,2)
+
+            // Then
+            assertThat(input.mostFrequent()).isEqualTo(2)
+        }
+    }
+
 }

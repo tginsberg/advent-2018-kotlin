@@ -16,3 +16,10 @@ fun <T> List<T>.toInfiniteSequence(): Sequence<T> = sequence {
         yieldAll(this@toInfiniteSequence)
     }
 }
+
+/**
+ * Find the most commonly occurring element in the Iterable<T>
+ */
+fun <T> Iterable<T>.mostFrequent(): T? =
+    this.groupBy { it }.maxBy { it.value.size }?.key
+
