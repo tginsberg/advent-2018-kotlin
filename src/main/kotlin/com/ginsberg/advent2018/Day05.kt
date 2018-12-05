@@ -17,13 +17,14 @@ class Day05(private val input: String) {
 
     fun solvePart2(): Int =
         ('A'..'Z')
-            .map { input.remove(it).react().length }
+            .map { input.react(it).length }
             .min()
             ?: throw IllegalStateException()
 
-    private fun String.react(): String =
+    private fun String.react(ignoring: Char? = null): String =
         this.fold(mutableListOf<Char>()) { done, char ->
             when {
+                ignoring != null && char.equals(ignoring, true) -> {}
                 done.firstOrNull() matches char -> done.removeAt(0)
                 else -> done.add(0, char)
             }
@@ -31,9 +32,6 @@ class Day05(private val input: String) {
         }
             .reversed()
             .joinToString(separator = "")
-
-    private fun String.remove(char: Char): String =
-        this.replace(char.toString(), "", true)
 
     private infix fun Char?.matches(other: Char): Boolean =
         when {
