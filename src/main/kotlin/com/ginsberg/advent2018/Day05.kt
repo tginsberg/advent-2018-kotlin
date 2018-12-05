@@ -24,7 +24,7 @@ class Day05(private val input: String) {
     private fun String.react(ignoring: Char? = null): String =
         this.fold(mutableListOf<Char>()) { done, char ->
             when {
-                ignoring != null && char.equals(ignoring, true) -> {}
+                ignoring != null && char.equals(ignoring, true) -> Unit
                 done.firstOrNull() matches char -> done.removeAt(0)
                 else -> done.add(0, char)
             }
