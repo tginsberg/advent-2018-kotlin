@@ -37,9 +37,7 @@ class Day05(private val input: String) {
         when {
             this == null -> false
             this.toUpperCase() != other.toUpperCase() -> false
-            this.isUpperCase() && other.isLowerCase() -> true
-            this.isLowerCase() && other.isUpperCase() -> true
-            else -> false
+            else -> this != other
         }
 
 }
