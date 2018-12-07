@@ -28,16 +28,15 @@ class Day06(input: List<String>) {
             }
         }
             .filterNot { it in infinite }
-            .groupBy { it }
-            .mapValues { it.value.size }
+            .groupingBy { it }
+            .eachCount()
             .maxBy { it.value }!!
             .value
     }
 
-
     fun solvePart2(range: Int = 10_000): Int =
-        xRange.flatMap { x ->
-            yRange.map { y ->
+        xRange.asSequence().flatMap { x ->
+            yRange.asSequence().map { y ->
                 points.map { it.distanceTo(x, y) }.sum()
             }
         }
