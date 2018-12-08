@@ -13,19 +13,19 @@ package com.ginsberg.advent2018
 class Day07(input: List<String>) {
 
     private val allPairs = parseInput(input)
-    private val dependedOn: Map<Char, Set<Char>> = generateDependencies(allPairs.map { it.second to it.first })
-    private val dependedBy: Map<Char, Set<Char>> = generateDependencies(allPairs)
-    private val allKeys = dependedBy.keys.union(dependedOn.keys)
+    private val childrenOf: Map<Char, Set<Char>> = generateDependencies(allPairs)
+    private val parentsOf: Map<Char, Set<Char>> = generateDependencies(allPairs.map { it.second to it.first })
+    private val allKeys = childrenOf.keys.union(parentsOf.keys)
 
     fun solvePart1(): String {
-        val ready = allKeys.filterNot { it in dependedOn }.toMutableList()
+        val ready = allKeys.filterNot { it in parentsOf }.toMutableList()
         val done = mutableListOf<Char>()
         while (ready.isNotEmpty()) {
             val next = ready.sorted().first().also { ready.remove(it) }
             done.add(next)
-            dependedBy[next]?.let { maybeReadySet ->
+            childrenOf[next]?.let { maybeReadySet ->
                 ready.addAll(maybeReadySet.filter { maybeReady ->
-                    dependedOn.getValue(maybeReady).all { it in done }
+                    parentsOf.getValue(maybeReady).all { it in done }
                 })
             }
         }
@@ -33,7 +33,7 @@ class Day07(input: List<String>) {
     }
 
     fun solvePart2(workers: Int, costFunction: (Char) -> Int): Int {
-        val ready = allKeys.filterNot { it in dependedOn }.map { it to costFunction(it) }.toMutableList()
+        val ready = allKeys.filterNot { it in parentsOf }.map { it to costFunction(it) }.toMutableList()
         val done = mutableListOf<Char>()
         var time = 0
 
@@ -49,10 +49,10 @@ class Day07(input: List<String>) {
                 done.add(workItem.first)
 
                 // Now that we are done, add some to ready that have become unblocked
-                dependedBy[workItem.first]?.let { maybeReadySet ->
+                childrenOf[workItem.first]?.let { maybeReadySet ->
                     ready.addAll(
                         maybeReadySet.filter { maybeReady ->
-                            dependedOn.getValue(maybeReady).all { it in done || it == workItem.first }
+                            parentsOf.getValue(maybeReady).all { it in done }
                         }
                             .map { it to costFunction(it) }
                             .sortedBy { it.first }
@@ -79,7 +79,7 @@ class Day07(input: List<String>) {
             .mapValues { (_, value) -> value.map { it.second }.toSet() }
 
     companion object {
-        fun exampleCostFunction(c: Char): Int = c - 'A' + 1
+        fun exampleCostFunction(c: Char): Int = actualCostFunction(c) - 60
         fun actualCostFunction(c: Char): Int = 60 + (c - 'A' + 1)
     }
 
