@@ -15,6 +15,7 @@ I am trying to solve these on the day they are posted with clear, idiomatic solu
 |    5    | Alchemical Reduction                          | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day5/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day05.kt) [\[AoC\]](http://adventofcode.com/2018/day/5) |
 |    6    | Chronal Coordinates                           | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day6/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day06.kt) [\[AoC\]](http://adventofcode.com/2018/day/6) |
 |    7    | The Sum of Its Parts                          | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day7/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day07.kt) [\[AoC\]](http://adventofcode.com/2018/day/7) |
+|    8    | Memory Maneuver                               | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day8/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day08.kt) [\[AoC\]](http://adventofcode.com/2018/day/8) |
 
 
 Copyright &copy; 2018 by Todd Ginsberg.
