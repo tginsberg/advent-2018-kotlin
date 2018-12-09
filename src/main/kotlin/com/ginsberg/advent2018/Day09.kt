@@ -10,7 +10,8 @@
  */
 package com.ginsberg.advent2018
 
-import java.util.LinkedList
+import java.util.ArrayDeque
+import java.util.Deque
 import kotlin.math.absoluteValue
 
 
@@ -24,7 +25,7 @@ class Day09(private val players: Int, private val highest: Int) {
 
     private fun play(numPlayers: Int, highest: Int): Long {
         val scores = LongArray(numPlayers)
-        val marbles = LinkedList<Int>().also { it.add(0) }
+        val marbles = ArrayDeque<Int>().also { it.add(0) }
 
         (1..highest).forEach { marble ->
             when {
@@ -46,7 +47,7 @@ class Day09(private val players: Int, private val highest: Int) {
         return scores.max()!!
     }
 
-    private fun <T> LinkedList<T>.shift(n: Int): Unit =
+    private fun <T> Deque<T>.shift(n: Int): Unit =
         when {
             n < 0 -> repeat(n.absoluteValue) {
                 addLast(removeFirst())
@@ -55,5 +56,4 @@ class Day09(private val players: Int, private val highest: Int) {
                 addFirst(removeLast())
             }
         }
-
 }
