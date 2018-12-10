@@ -57,10 +57,55 @@ internal class ExtensionsTest {
         @DisplayName("Finds most frequent")
         fun findsMostFrequent() {
             // Given
-            val input = listOf(1,1,2,2,2)
+            val input = listOf(1, 1, 2, 2, 2)
 
             // Then
             assertThat(input.mostFrequent()).isEqualTo(2)
+        }
+    }
+
+    @DisplayName("IntRange Span")
+    @Nested
+    inner class IntRangeSpan {
+
+        @Test
+        @DisplayName("Zero range is zero")
+        fun zeroMeansZero() {
+            // Given
+            val range = IntRange(0, 0)
+
+            // Then
+            assertThat(range.span).isEqualTo(0L)
+        }
+
+        @Test
+        @DisplayName("Both Positive")
+        fun bothPositive() {
+            // Given
+            val range = IntRange(10, 20)
+
+            // Then
+            assertThat(range.span).isEqualTo(10)
+        }
+
+        @Test
+        @DisplayName("Both Negative")
+        fun bothNegative() {
+            // Given
+            val range = IntRange(-20, -10)
+
+            // Then
+            assertThat(range.span).isEqualTo(10)
+        }
+
+        @Test
+        @DisplayName("Negative through Positive")
+        fun negativeThroughPositive() {
+            // Given
+            val range = IntRange(-20, 20)
+
+            // Then
+            assertThat(range.span).isEqualTo(40)
         }
     }
 

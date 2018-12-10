@@ -17,6 +17,7 @@ I am trying to solve these on the day they are posted with clear, idiomatic solu
 |    7    | The Sum of Its Parts                          | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day7/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day07.kt) [\[AoC\]](http://adventofcode.com/2018/day/7) |
 |    8    | Memory Maneuver                               | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day8/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day08.kt) [\[AoC\]](http://adventofcode.com/2018/day/8) |
 |    9    | Marble Mania                                  | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day9/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day09.kt) [\[AoC\]](http://adventofcode.com/2018/day/9) |
+|   10    | The Stars Align                               | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day10/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day10.kt) [\[AoC\]](http://adventofcode.com/2018/day/10) |
 
 
 Copyright &copy; 2018 by Todd Ginsberg.
