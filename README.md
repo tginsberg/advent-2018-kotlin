@@ -20,6 +20,7 @@ I am trying to solve these on the day they are posted with clear, idiomatic solu
 |   10    | The Stars Align                               | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day10/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day10.kt) [\[AoC\]](http://adventofcode.com/2018/day/10) |
 |   11    | Chronal Charge                                | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day11/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day11.kt) [\[AoC\]](http://adventofcode.com/2018/day/11) |
 |   12    | Subterranean Sustainability                   | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day12/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day12.kt) [\[AoC\]](http://adventofcode.com/2018/day/12) |
+|   13    | Mine Cart Madness                             | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day13/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day13.kt) [\[AoC\]](http://adventofcode.com/2018/day/13) |
 
 
 Copyright &copy; 2018 by Todd Ginsberg.
