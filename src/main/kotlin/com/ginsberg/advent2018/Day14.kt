@@ -11,12 +11,13 @@
 package com.ginsberg.advent2018
 
 
-class Day14(private val stoppingPoint: Int) {
+class Day14(stoppingPoint: String) {
 
-    private val stopList = stoppingPoint.asDigits()
+    private val stopInt = stoppingPoint.toInt()
+    private val stopList = stoppingPoint.map { it.toString().toInt() }.toList()
 
     fun solvePart1(): String =
-        recipes { it.size == stoppingPoint + 10 }.takeLast(10).joinToString("")
+        recipes { it.size == stopInt + 10 }.takeLast(10).joinToString("")
 
     fun solvePart2(): Int =
         recipes { it.endsWith(stopList) }.size - stopList.size

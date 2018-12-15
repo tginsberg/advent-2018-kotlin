@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test
 class Day14Test {
 
     // Given
-    val actualInput = Resources.resourceAsString("day14_input.txt").toInt()
+    val actualInput = Resources.resourceAsString("day14_input.txt")
 
     @Nested
     @DisplayName("Part 1")
@@ -22,7 +22,7 @@ class Day14Test {
         @Test
         fun `Matches examples`() {
             // When
-            val day = Day14(9)
+            val day = Day14("9")
 
             // Then
             assertThat(day.solvePart1()).isEqualTo("5158916779")
@@ -43,10 +43,10 @@ class Day14Test {
     inner class Part2 {
 
         private val sampleInputs = listOf(
-            Pair(51589, 9),
-            Pair(1245, 6),
-            Pair(92510, 18),
-            Pair(59414, 2018)
+            Pair("51589", 9),
+            Pair("01245", 5),
+            Pair("92510", 18),
+            Pair("59414", 2018)
         )
 
         @Test
