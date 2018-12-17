@@ -22,7 +22,7 @@ I am trying to solve these on the day they are posted with clear, idiomatic solu
 |   12    | Subterranean Sustainability                   | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day12/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day12.kt) [\[AoC\]](http://adventofcode.com/2018/day/12) |
 |   13    | Mine Cart Madness                             | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day13/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day13.kt) [\[AoC\]](http://adventofcode.com/2018/day/13) |
 |   14    | Chocolate Charts                              | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day14/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day14.kt) [\[AoC\]](http://adventofcode.com/2018/day/14) |
-|   15    | Beverage Bandits                              |  Coming Soon |
+|   15    | Beverage Bandits                              | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day15/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day15.kt) [\[AoC\]](http://adventofcode.com/2018/day/15) |
 |   16    | Chronal Classification                        | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day16/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day16.kt) [\[AoC\]](http://adventofcode.com/2018/day/16) |
 
 
