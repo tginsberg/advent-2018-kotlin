@@ -14,6 +14,11 @@ data class Point(val x: Int, val y: Int) : Comparable<Point> {
     fun distanceTo(other: Point): Int =
         distanceTo(other.x, other.y)
 
+    val up by lazy { Point(x, y - 1) }
+    val down by lazy { Point(x, y + 1) }
+    val left by lazy { Point(x - 1, y) }
+    val right by lazy { Point(x + 1, y) }
+
     fun cardinalNeighbors(allowNegative: Boolean = true): List<Point> =
         // Note: Generate in reading order!
         listOf(
