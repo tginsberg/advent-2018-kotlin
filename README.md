@@ -26,6 +26,7 @@ I am trying to solve these on the day they are posted with clear, idiomatic solu
 |   16    | Chronal Classification                        | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day16/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day16.kt) [\[AoC\]](http://adventofcode.com/2018/day/16) |
 |   17    | Reservoir Research                            | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day17/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day17.kt) [\[AoC\]](http://adventofcode.com/2018/day/17) |
 |   18    | Settlers of The North Pole                    | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day18/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day18.kt) [\[AoC\]](http://adventofcode.com/2018/day/18) |
+|   19    | Go With The Flow                              | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day19/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day19.kt) [\[AoC\]](http://adventofcode.com/2018/day/19) |
 
 
 Copyright &copy; 2018 by Todd Ginsberg.
