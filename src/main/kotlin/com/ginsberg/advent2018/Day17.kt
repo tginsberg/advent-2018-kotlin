@@ -113,16 +113,6 @@ class Day17(rawInput: List<String>) {
             }
         }
 
-    private operator fun Array<CharArray>.get(point: Point): Char =
-        this[point.y][point.x]
-
-    private operator fun Array<CharArray>.set(point: Point, to: Char) {
-        this[point.y][point.x] = to
-    }
-
-    private operator fun Array<CharArray>.contains(point: Point): Boolean =
-        point.x >= 0 && point.x < this[0].size && point.y >= 0 && point.y < this.size
-
     companion object {
         private val nonDigits = """[xy=,]""".toRegex()
         private val wallOrStill = setOf('#', '~')

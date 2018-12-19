@@ -28,6 +28,19 @@ data class Point(val x: Int, val y: Int) : Comparable<Point> {
             Point(x, y + 1)
         ).filter { allowNegative || it.x >= 0 && it.y >= 0 }
 
+    fun neighbors(allowNegative: Boolean = true): List<Point> =
+        // Note: Generate in reading order!
+        listOf(
+            Point(x - 1, y - 1),
+            Point(x, y - 1),
+            Point(x + 1, y - 1),
+            Point(x - 1, y),
+            Point(x + 1, y),
+            Point(x - 1, y + 1),
+            Point(x, y + 1),
+            Point(x + 1, y + 1)
+        ).filter { allowNegative || it.x >= 0 && it.y >= 0 }
+
     override fun compareTo(other: Point): Int =
         when {
             y < other.y -> -1
