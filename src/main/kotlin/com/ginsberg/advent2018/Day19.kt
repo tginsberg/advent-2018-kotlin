@@ -3,10 +3,10 @@
  */
 
 /**
- * Advent of Code 2018, Day 16 - Chronal Classification
+ * Advent of Code 2018, Day 19 - Chronal Classification
  *
- * Problem Description: http://adventofcode.com/2018/day/18
- * Blog Post/Commentary: https://todd.ginsberg.com/post/advent-of-code/2018/day18/
+ * Problem Description: http://adventofcode.com/2018/day/19
+ * Blog Post/Commentary: https://todd.ginsberg.com/post/advent-of-code/2018/day19/
  */
 package com.ginsberg.advent2018
 
