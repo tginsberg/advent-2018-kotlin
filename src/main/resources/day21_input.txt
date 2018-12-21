@@ -1,0 +1,32 @@
+#ip 1
+seti 123 0 4              # 0  register[4] = 123
+bani 4 456 4              # 1  register[4] = register[4] & 456
+eqri 4 72 4               # 2  register[4] = if(register[4] == 72) 1 else 0
+addr 4 1 1                # 3  register[1] = register[4](1) + register[1] - Jump over next instruction
+seti 0 0 1                # 4  register[1] = 0  - So this loops back to 0
+seti 0 2 4                # 5  register[4] = 0
+bori 4 65536 3            # 6  register[3] = register[4] | 65536
+seti 10552971 1 4         # 7  register[4] = 10552971
+bani 3 255 5              # 8  register[5] = register[3] & 255
+addr 4 5 4                # 9  register[4] = register[4] + register[5]
+bani 4 16777215 4         # 10 register[4] = register[4] & 16777215
+muli 4 65899 4            # 11 register[4] = register[4] * 65899
+bani 4 16777215 4         # 12 register[4] = register[4] & 16777215
+gtir 256 3 5              # 13 register[5] = if(256 > register[3]) 1 else 0
+addr 5 1 1                # 14 register[1] = register[5] + register[1]    - ???
+addi 1 1 1                # 15 register[1] = register[1] + 1 - ???
+seti 27 7 1               # 16 register[1] = 27
+seti 0 1 5                # 17 register[5] = 0
+addi 5 1 2                # 18 register[2] = register[5] + 1
+muli 2 256 2              # 19 register[2] = register[2] * 256
+gtrr 2 3 2                # 20 register[2] = if(register[2] > register[3]) 1 else 0
+addr 2 1 1                # 21 register[1] = register[2] + register[1]   - ???
+addi 1 1 1                # 22 register[1] = register[1] + 1             -???
+seti 25 0 1               # 23 register[1] = 25
+addi 5 1 5                # 24 register[5] = register[5] + 1
+seti 17 2 1               # 25 register[1] = 17
+setr 5 7 3                # 26 register[3] = register[5] + 7
+seti 7 8 1                # 27 register[1] = 7
+eqrr 4 0 5                # 28 register[5] = if(register[4] == register[0]) 1 else 0
+addr 5 1 1                # 29 register[1] = register[5] + 1
+seti 5 0 1                # 30 register[1] = 5

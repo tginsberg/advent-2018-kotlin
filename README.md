@@ -28,6 +28,7 @@ I am trying to solve these on the day they are posted with clear, idiomatic solu
 |   18    | Settlers of The North Pole                    | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day18/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day18.kt) [\[AoC\]](http://adventofcode.com/2018/day/18) |
 |   19    | Go With The Flow                              | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day19/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day19.kt) [\[AoC\]](http://adventofcode.com/2018/day/19) |
 |   20    | A Regular Map                                 | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day20/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day20.kt) [\[AoC\]](http://adventofcode.com/2018/day/20) |
+|   21    | Chronal Conversion                            | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day21/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day21.kt) [\[AoC\]](http://adventofcode.com/2018/day/21) |
 
 
 Copyright &copy; 2018 by Todd Ginsberg.
