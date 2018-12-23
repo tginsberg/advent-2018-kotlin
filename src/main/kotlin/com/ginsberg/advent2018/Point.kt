@@ -51,6 +51,8 @@ data class Point(val x: Int, val y: Int) : Comparable<Point> {
         }
 
     companion object {
+        val origin = Point(0, 0)
+
         fun of(input: String): Point =
             input.split(",")
                 .map { it.trim().toInt() }
