@@ -98,10 +98,10 @@ class Day13(rawInput: List<String>) {
 
         override fun compareTo(other: Cart): Int =
             when {
-                x < other.x -> -1
-                x > other.x -> 1
                 y < other.y -> -1
                 y > other.y -> 1
+                x < other.x -> -1
+                x > other.x -> 1
                 else -> 0
             }
     }
