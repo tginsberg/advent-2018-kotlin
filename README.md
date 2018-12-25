@@ -32,6 +32,7 @@ I am trying to solve these on the day they are posted with clear, idiomatic solu
 |   22    | Mode Maze                                     | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day22/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day22.kt) [\[AoC\]](http://adventofcode.com/2018/day/22) |
 |   23    | Experimental Emergency Teleportation          | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day23/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day23.kt) [\[AoC\]](http://adventofcode.com/2018/day/23) |
 |   24    | Immune System Simulator 20XX                  | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day24/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day24.kt) [\[AoC\]](http://adventofcode.com/2018/day/24) |
+|   25    | Four-Dimensional Adventure                    | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2018/day25/) [\[Code\]](https://github.com/tginsberg/advent-2018-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2018/Day25.kt) [\[AoC\]](http://adventofcode.com/2018/day/25) |
 
 
 Copyright &copy; 2018 by Todd Ginsberg.
