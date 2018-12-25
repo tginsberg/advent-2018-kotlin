@@ -39,10 +39,19 @@ class Day24(immuneInput: List<String>, infectionInput: List<String>) {
         return combatants.filter { it.alive }
     }
 
-    private fun roundOfFighting(combatants: List<Group>): Int {
-        // Find all possible targets and order them by preference
+    private fun roundOfFighting(combatants: List<Group>): Int =
+        findTargets(combatants)
+            .sortedByDescending { it.first.initiative }
+            .filterNot { it.second == null }
+            .map { (attacker, target) ->
+                if (attacker.alive) attacker.fight(target!!)
+                else 0
+            }
+            .sum()
+
+    private fun findTargets(combatants: List<Group>): Set<Pair<Group, Group?>> {
         val alreadyTargeted = mutableSetOf<Group>()
-        val fightingPairs: Set<Pair<Group, Group?>> = combatants.filter { it.alive }
+        return combatants.filter { it.alive }
             .sortedWith(compareByDescending<Group> { it.effectivePower() }.thenByDescending { it.initiative })
             .map { group ->
                 group to combatants
@@ -58,16 +67,6 @@ class Day24(immuneInput: List<String>, infectionInput: List<String>) {
                     }
             }
             .toSet()
-
-        // Do all of the fights, in order. (Yes, we could tack this on to the expression above)
-        return fightingPairs
-            .sortedByDescending { it.first.initiative }
-            .filterNot { it.second == null }
-            .map { (attacker, target) ->
-                if (attacker.alive) attacker.fight(target!!)
-                else 0
-            }.sum()
-
     }
 
     private enum class Team {
@@ -98,8 +97,7 @@ class Day24(immuneInput: List<String>, infectionInput: List<String>) {
             }
 
         fun fight(other: Group): Int {
-            val damage = calculateDamageTo(other)
-            val unitDeath = damage / other.unitHp
+            val unitDeath = calculateDamageTo(other) / other.unitHp
             other.units -= unitDeath
             if (other.units <= 0) {
                 other.alive = false
